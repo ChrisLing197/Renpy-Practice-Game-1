@@ -1,0 +1,75 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+Exception: Unknown text tag u"'TMP': 'C:\\\\Users\\\\CHRIST~1\\\\AppData\\\\Local\\\\Temp', 'PCBRAND': 'Pavilion', 'COMPUTERNAME': 'WINDOWS-PREFS', 'USERDOMAIN': 'WINDOWS-PREFS', 'PSMODULEPATH': 'C:\\\\WINDOWS\\\\system32\\\\WindowsPowerShell\\\\v1.0\\\\Modules\\\\', 'COMMONPROGRAMFILES': 'C:\\\\Program Files (x86)\\\\Common Files', 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel', 'PROGRAMFILES': 'C:\\\\Program Files (x86)', 'PROCESSOR_REVISION': '3c03', 'PATH': 'C:\\\\ProgramData\\\\Oracle\\\\Java\\\\javapath;C:\\\\Program Files (x86)\\\\HP SimplePass\\\\x64;C:\\\\Program Files (x86)\\\\HP SimplePass\\\\;;C:\\\\Program Files (x86)\\\\Intel\\\\iCLS Client\\\\;C:\\\\Program Files\\\\Intel\\\\iCLS Client\\\\;C:\\\\WINDOWS\\\\system32;C:\\\\WINDOWS;C:\\\\WINDOWS\\\\System32\\\\Wbem;C:\\\\WINDOWS\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\;C:\\\\Program Files (x86)\\\\Windows Live\\\\Shared;C:\\\\Program Files (x86)\\\\Intel\\\\OpenCL SDK\\\\3.0\\\\bin\\\\x86;C:\\\\Program Files (x86)\\\\Intel\\\\OpenCL SDK\\\\3.0\\\\bin\\\\x64;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\Intel\\\\WiFi\\\\bin\\\\;C:\\\\Program Files\\\\Common Files\\\\Intel\\\\WirelessCommon\\\\;C:\\\\Program Files (x86)\\\\PuTTY\\\\;C:\\\\Program Files (x86)\\\\Skype\\\\Phone\\\\;C:\\\\Users\\\\Christian\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps;', 'SYSTEMROOT': 'C:\\\\WINDOWS', 'PROGRAMFILES(X86)': 'C:\\\\Program Files (x86)', 'TEMP': 'C:\\\\Users\\\\CHRIST~1\\\\AppData\\\\Local\\\\Temp', 'PLATFORM': 'MCD', 'COMMONPROGRAMFILES(X86)': 'C:\\\\Program Files (x86)\\\\Common Files', 'PROCESSOR_ARCHITECTURE': 'x86', 'ALLUSERSPROFILE': 'C:\\\\ProgramData', 'USERPROFILE': 'C:\\\\Users\\\\Christian', 'LOCALAPPDATA': 'C:\\\\Users\\\\Christian\\\\AppData\\\\Local', 'FPS_BROWSER_USER_PROFILE_STRING': 'Default', 'HOMEPATH': '\\\\Users\\\\Christian', 'USERDOMAIN_ROAMINGPROFILE': 'WINDOWS-PREFS', 'PROGRAMW6432': 'C:\\\\Program Files', 'USERNAME': 'Christian', 'LOGONSERVER': '\\\\\\\\WINDOWS-PREFS', 'COMSPEC': 'C:\\\\WINDOWS\\\\system32\\\\cmd.exe', 'PROGRAMDATA': 'C:\\\\ProgramData', 'ONEDRIVE': 'C:\\\\Users\\\\Christian\\\\OneDrive', 'FPS_BROWSER_APP_PROFILE_STRING': 'Internet Explorer', 'SESSIONNAME': 'Console', 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC', 'RENPY_LAUNCHER_LANGUAGE': 'english', 'FP_NO_HOST_CHECK': 'NO', 'SDL_VIDEO_X11_WMCLASS': 'launcher-4', 'APPDATA': 'C:\\\\Users\\\\Christian\\\\AppData\\\\Roaming', 'HOMEDRIVE': 'C:', 'SYSTEMDRIVE': 'C:', 'ONLINESERVICES': 'Online Services', 'NUMBER_OF_PROCESSORS': '8', 'RENPY_EDIT_PY': 'C:\\\\Users\\\\Christian\\\\Downloads\\\\renpy-6.99.13-sdk\\\\editra\\\\Editra.edit.py', 'PROCESSOR_LEVEL': '6', 'PROCESSOR_ARCHITEW6432': 'AMD64', 'COMMONPROGRAMW6432': 'C:\\\\Program Files\\\\Common Files', 'OS': 'Windows_NT', 'PUBLIC': 'C:\\\\Users\\\\Public', 'WINDIR': 'C:\\\\WINDOWS'"
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "C:\Users\Christian\Downloads\renpy-6.99.13-sdk\renpy\ast.py", line 827, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Christian\Downloads\renpy-6.99.13-sdk\renpy\python.py", line 1764, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in <module>
+    ui.interact()
+  File "C:\Users\Christian\Downloads\renpy-6.99.13-sdk\renpy\ui.py", line 287, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Christian\Downloads\renpy-6.99.13-sdk\renpy\display\core.py", line 2553, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\Christian\Downloads\renpy-6.99.13-sdk\renpy\display\core.py", line 2916, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\Christian\Downloads\renpy-6.99.13-sdk\renpy\display\core.py", line 1980, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 430, in renpy.display.render.render_screen (gen\renpy.display.render.c:6938)
+    rv = render(root, width, height, 0, 0)
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Christian\Downloads\renpy-6.99.13-sdk\renpy\display\layout.py", line 702, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Christian\Downloads\renpy-6.99.13-sdk\renpy\display\layout.py", line 702, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Christian\Downloads\renpy-6.99.13-sdk\renpy\display\layout.py", line 702, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Christian\Downloads\renpy-6.99.13-sdk\renpy\display\screen.py", line 625, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Christian\Downloads\renpy-6.99.13-sdk\renpy\display\layout.py", line 702, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Christian\Downloads\renpy-6.99.13-sdk\renpy\display\layout.py", line 904, in render
+    surf = render(d, width - x, rh, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Christian\Downloads\renpy-6.99.13-sdk\renpy\text\text.py", line 1774, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "C:\Users\Christian\Downloads\renpy-6.99.13-sdk\renpy\text\text.py", line 550, in __init__
+    self.paragraphs = self.segment(text.tokens, style, renders, text)
+  File "C:\Users\Christian\Downloads\renpy-6.99.13-sdk\renpy\text\text.py", line 1048, in segment
+    raise Exception("Unknown text tag %r" % text)
+Exception: Unknown text tag u"'TMP': 'C:\\\\Users\\\\CHRIST~1\\\\AppData\\\\Local\\\\Temp', 'PCBRAND': 'Pavilion', 'COMPUTERNAME': 'WINDOWS-PREFS', 'USERDOMAIN': 'WINDOWS-PREFS', 'PSMODULEPATH': 'C:\\\\WINDOWS\\\\system32\\\\WindowsPowerShell\\\\v1.0\\\\Modules\\\\', 'COMMONPROGRAMFILES': 'C:\\\\Program Files (x86)\\\\Common Files', 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel', 'PROGRAMFILES': 'C:\\\\Program Files (x86)', 'PROCESSOR_REVISION': '3c03', 'PATH': 'C:\\\\ProgramData\\\\Oracle\\\\Java\\\\javapath;C:\\\\Program Files (x86)\\\\HP SimplePass\\\\x64;C:\\\\Program Files (x86)\\\\HP SimplePass\\\\;;C:\\\\Program Files (x86)\\\\Intel\\\\iCLS Client\\\\;C:\\\\Program Files\\\\Intel\\\\iCLS Client\\\\;C:\\\\WINDOWS\\\\system32;C:\\\\WINDOWS;C:\\\\WINDOWS\\\\System32\\\\Wbem;C:\\\\WINDOWS\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\;C:\\\\Program Files (x86)\\\\Windows Live\\\\Shared;C:\\\\Program Files (x86)\\\\Intel\\\\OpenCL SDK\\\\3.0\\\\bin\\\\x86;C:\\\\Program Files (x86)\\\\Intel\\\\OpenCL SDK\\\\3.0\\\\bin\\\\x64;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\Intel\\\\WiFi\\\\bin\\\\;C:\\\\Program Files\\\\Common Files\\\\Intel\\\\WirelessCommon\\\\;C:\\\\Program Files (x86)\\\\PuTTY\\\\;C:\\\\Program Files (x86)\\\\Skype\\\\Phone\\\\;C:\\\\Users\\\\Christian\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps;', 'SYSTEMROOT': 'C:\\\\WINDOWS', 'PROGRAMFILES(X86)': 'C:\\\\Program Files (x86)', 'TEMP': 'C:\\\\Users\\\\CHRIST~1\\\\AppData\\\\Local\\\\Temp', 'PLATFORM': 'MCD', 'COMMONPROGRAMFILES(X86)': 'C:\\\\Program Files (x86)\\\\Common Files', 'PROCESSOR_ARCHITECTURE': 'x86', 'ALLUSERSPROFILE': 'C:\\\\ProgramData', 'USERPROFILE': 'C:\\\\Users\\\\Christian', 'LOCALAPPDATA': 'C:\\\\Users\\\\Christian\\\\AppData\\\\Local', 'FPS_BROWSER_USER_PROFILE_STRING': 'Default', 'HOMEPATH': '\\\\Users\\\\Christian', 'USERDOMAIN_ROAMINGPROFILE': 'WINDOWS-PREFS', 'PROGRAMW6432': 'C:\\\\Program Files', 'USERNAME': 'Christian', 'LOGONSERVER': '\\\\\\\\WINDOWS-PREFS', 'COMSPEC': 'C:\\\\WINDOWS\\\\system32\\\\cmd.exe', 'PROGRAMDATA': 'C:\\\\ProgramData', 'ONEDRIVE': 'C:\\\\Users\\\\Christian\\\\OneDrive', 'FPS_BROWSER_APP_PROFILE_STRING': 'Internet Explorer', 'SESSIONNAME': 'Console', 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC', 'RENPY_LAUNCHER_LANGUAGE': 'english', 'FP_NO_HOST_CHECK': 'NO', 'SDL_VIDEO_X11_WMCLASS': 'launcher-4', 'APPDATA': 'C:\\\\Users\\\\Christian\\\\AppData\\\\Roaming', 'HOMEDRIVE': 'C:', 'SYSTEMDRIVE': 'C:', 'ONLINESERVICES': 'Online Services', 'NUMBER_OF_PROCESSORS': '8', 'RENPY_EDIT_PY': 'C:\\\\Users\\\\Christian\\\\Downloads\\\\renpy-6.99.13-sdk\\\\editra\\\\Editra.edit.py', 'PROCESSOR_LEVEL': '6', 'PROCESSOR_ARCHITEW6432': 'AMD64', 'COMMONPROGRAMW6432': 'C:\\\\Program Files\\\\Common Files', 'OS': 'Windows_NT', 'PUBLIC': 'C:\\\\Users\\\\Public', 'WINDIR': 'C:\\\\WINDOWS'"
+
+Windows-8-6.2.9200
+Ren'Py 6.99.13.2919
+{'TMP': 'C:\\Users\\CHRIST~1\\AppData\\Local\\Temp', 'PCBRAND': 'Pavilion', 'COMPUTERNAME': 'WINDOWS-PREFS', 'USERDOMAIN': 'WINDOWS-PREFS', 'PSMODULEPATH': 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\', 'COMMONPROGRAMFILES': 'C:\\Program Files (x86)\\Common Files', 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel', 'PROGRAMFILES': 'C:\\Program Files (x86)', 'PROCESSOR_REVISION': '3c03', 'PATH': 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\HP SimplePass\\x64;C:\\Program Files (x86)\\HP SimplePass\\;;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\Christian\\AppData\\Local\\Microsoft\\WindowsApps;', 'SYSTEMROOT': 'C:\\WINDOWS', 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)', 'TEMP': 'C:\\Users\\CHRIST~1\\AppData\\Local\\Temp', 'PLATFORM': 'MCD', 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files', 'PROCESSOR_ARCHITECTURE': 'x86', 'ALLUSERSPROFILE': 'C:\\ProgramData', 'USERPROFILE': 'C:\\Users\\Christian', 'LOCALAPPDATA': 'C:\\Users\\Christian\\AppData\\Local', 'FPS_BROWSER_USER_PROFILE_STRING': 'Default', 'HOMEPATH': '\\Users\\Christian', 'USERDOMAIN_ROAMINGPROFILE': 'WINDOWS-PREFS', 'PROGRAMW6432': 'C:\\Program Files', 'USERNAME': 'Christian', 'LOGONSERVER': '\\\\WINDOWS-PREFS', 'COMSPEC': 'C:\\WINDOWS\\system32\\cmd.exe', 'PROGRAMDATA': 'C:\\ProgramData', 'ONEDRIVE': 'C:\\Users\\Christian\\OneDrive', 'FPS_BROWSER_APP_PROFILE_STRING': 'Internet Explorer', 'SESSIONNAME': 'Console', 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC', 'RENPY_LAUNCHER_LANGUAGE': 'english', 'FP_NO_HOST_CHECK': 'NO', 'SDL_VIDEO_X11_WMCLASS': 'launcher-4', 'APPDATA': 'C:\\Users\\Christian\\AppData\\Roaming', 'HOMEDRIVE': 'C:', 'SYSTEMDRIVE': 'C:', 'ONLINESERVICES': 'Online Services', 'NUMBER_OF_PROCESSORS': '8', 'RENPY_EDIT_PY': 'C:\\Users\\Christian\\Downloads\\renpy-6.99.13-sdk\\editra\\Editra.edit.py', 'PROCESSOR_LEVEL': '6', 'PROCESSOR_ARCHITEW6432': 'AMD64', 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files', 'OS': 'Windows_NT', 'PUBLIC': 'C:\\Users\\Public', 'WINDIR': 'C:\\WINDOWS'} 1.0
